@@ -17,11 +17,20 @@ After this, we created a new supermarket totals dataframe from the supermarket d
 We then proceeded to merge the supermarket totals and census dataframes on zipcode and displayed the new supermarkets density final dataframe.
 We checked a specific zipcode to find it had no values so we changed any values of 'NaN' to '0' in the dataframe and displayed the dataframe with this change.
 Next, we formatted and aggregated supermarket count by city and displayed this dataframe.
-
+We then formatted and aggregated total population count by city and displayed this dataframe.
 We did a merge of the city count dataframe and the population count dataframe on city and displayed the new dataframe, which we named final_two.
-We calculated and displayed the number of customers per store for each city.
-Then we did a merge of the final_two dataframe and the poverty total dataframe on city and displayed the new dataframe.
+We plotted and displayed a bar chart for supermarket count by population per city.
+After this, we formatted and aggregated total poverty count by city displayed this dataframe.
+Then we did a merge of the final_two dataframe and the poverty total dataframe on city and displayed the new dataframe called final_three.
 We then calculated and displayed the poverty percentage rate for each city.
-Lastly, we added columns for poverty percentage rate and customers per store to the dataframe and displayed this final dataframe.
+Lastly, we added a column for poverty percentage rate and customers per store to the dataframe and displayed this final dataframe.
 
 ## Food Desert Starter Code Notebook
+We began by importing our dependencies and loading the csv data.
+We filtered for specific counties that we chose to look into more and renamed a column in the csv to be more recognizable as a food desert.
+We added map colors on the graph, then created a vertically stacked bar chart, setting labels and the title, as well as customizing legend labels, rotating the x-axis labels to be horizontal.
+We printed the numeric values and added a legend assigning each color to being a food desert (yes) or not being a food desert (no), then we showed the plot.
+Next, we created a for loop to loop through each county and created pie charts showing the distribution of food deserts in each county. We displayed all four pie charts in one plot.
+Then we created a for loop to loop through each county and created bar charts showing food deserts for urban vs in each county, which we displayed in separate bar chart plots for each county. We also displayed a summary of the total population for each county based on food desert with a breakdown of it is a food desert or not above each bar chart plot.
+Then we created a for loop to loop through each county and created bar charts showing food deserts by urban vs non-urban in each county, which we displayed in separate bar chart plots for each county, with two bars per bar chart plot. We also displayed a summary of urban vs non-urban counts for each county above all the bar chart plots.
+Lastly, we created a for loop to loop through each county and created scatter plots for food desert vs poverty rate, which we displayed in separate scatter plots for each county.
