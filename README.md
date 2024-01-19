@@ -1,10 +1,17 @@
 # Project 1: Food Deserts Analysis
 
+We used a Google Doc for our collaboration:
+https://docs.google.com/document/d/1ZLTZfn4TfGabZN2vWS41wqPgEh_MCRO0MjD5_WTs9mk/edit?usp=sharing
+
+We also used a Google Presentation for our presentation:
+https://docs.google.com/presentation/d/1qbKaD6DTTfHBibHcoHtcd6msB4QAEu6V-_ABy75_HCY/edit?usp=sharing
+
 We have two jupyter notebooks that we worked with.
 The first one, named "Geoapify Places 4 Cities", is our main code, running data for our analysis.
 The other one, named "Food Deserts Starter Code", is where we created our vizualizations for our data.
 
 ## Geoapify Places 4 Cities Notebook
+
 We began by importing our dependencies, turning off warning messages, and importing the API keys.
 Next, we created an instance of the census library using the year 2021, and then ran a census search to retrieve data on all zip codes from the 2021 ACS5 Census. We converted this data to a dataframe and renamed columns to be clearer, then we displayed the census dataframe.
 Next, we created lists for cities and places, as well as empty lists for rows and responses, for a new supermarket dataframe.
@@ -26,6 +33,7 @@ We then calculated and displayed the poverty percentage rate for each city.
 Lastly, we added a column for poverty percentage rate and customers per store to the dataframe and displayed this final dataframe.
 
 ## Food Desert Starter Code Notebook
+
 We began by importing our dependencies and loading the csv data.
 We filtered for specific counties that we chose to look into more and renamed a column in the csv to be more recognizable as a food desert.
 We added map colors on the graph, then created a vertically stacked bar chart, setting labels and the title, as well as customizing legend labels, rotating the x-axis labels to be horizontal.
